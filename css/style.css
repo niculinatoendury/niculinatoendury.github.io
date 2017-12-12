@@ -1,0 +1,329 @@
+nav {
+  position: fixed;
+  z-index: 2;
+  right:0;
+  left:0;
+  text-align: center;
+
+  }
+
+  nav ul{
+  text-align: center; /*bewirkt eine mittige textausrichtung*/
+  margin: 0; /*entfernt standardisierte Aussenabstände */
+  background-color: #fffffff0;
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline; /*sorgt dafür, dass alle li-Elemente nebeneinander dargestellt werden*/
+
+}
+nav a {
+  display: inline-block;
+  /*inline-block macht jedes der a-Elemente in der Navigation zu
+  einem Block-Element, sodass sich Aussenabstände und Höhe definieren lassen. Display: Block
+  würde jeden Navigationspunkt die volle Breite des Elternelements nutzen lassen, somit wären
+  die Links wieder untereinander, aber mittig. */
+
+color: #B1B0AE; /*Textfarbe innerhalb nav a, kann als HTML Farbcode
+#123456 oder als eines der Keywords angegeben werden. Z.B. red, blue
+yellow - Liste siehe Links weiter unten.*/
+font-size: 18px; /*Schriftgrösse*/
+padding: 22px 15px; /*Innenabstand*/
+text-decoration: none; /*entfernt den Browser-Standart dass links
+unterstrichen sind*/
+font-weight: 400; /*setzt die Schriftdicke auf semi-Bold */
+font-family: raleway-light;
+}
+  #about {
+    display: flex;
+    font-family: raleway-thin;
+    color: #684220;
+    padding-top: 65px;
+  }
+  #portrait {
+    width: 50%;
+    position: relative;
+  }
+#portrait_image{
+  background-size: cover;/*sorgt dafür dass das Bild immer das
+  Elternelement komplett ausfüllt */
+  background-image: url("../img/ninabild.jpg"); /*gibt die Quelle
+  unseres Bildes an*/
+  background-position: center; /*bestimmt wie das Bild beim verkleinern
+  positioniert werden soll*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#name h1 {
+  color: #684220;
+  font-family: DIN Condensed;
+  font-size: 30px;
+}
+#beschreibung {
+  width: 50%;
+  background: #F5F5F5;
+}
+#name {
+  min-height: 200px;
+  margin: 5%;
+}
+#adresse {
+  color: #466D4E;
+  background: #F5F5F5;
+  min-height: 200px;
+  padding:5%;
+}
+body { /*globale Schrifteinstellungen definieren*/
+font-size: 16px;
+font-family: DIN Condensed;
+line-height: 21px;
+color: #684220;
+}
+a { /*links global stylen*/
+color: #684220;
+text-decoration: none;
+}
+#beschreibung h1 {/*den h1 Tag innerhlab
+  der ID beschreibung stylen*/
+  color: #684220
+  line-height: 100%;
+  text-transform: uppercase;
+}
+#beschreibung span { /*das spanTag innerhalb der ID
+beschreibung stylen*/
+color: #684220;
+font-size: 14px;
+text-transform: none;
+}
+#skills h1 {
+  text-align: center;
+  padding-top: 5%;
+}
+main {
+  width: 100%;
+}
+#wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+}
+#wrapper h1 {
+  text-align: center;
+  line-height: 4em;
+}
+.skills-icons {
+  display: flex;
+  flex-flow: row wrap;
+}
+#erstes-icon, #zweites-icon, #drittes-icon {
+  height: 300px;
+  width: 33.3333%;
+  text-align: center;
+}
+#erstes-icon {
+  background: url("../img/kreative1.svg")50% 50% no-repeat;
+}
+#zweites-icon {
+  background: url("../img/pc1.svg")50% 50% no-repeat;
+}
+#drittes-icon {
+  background: url("../img/häckli.svg")50% 50% no-repeat;
+}
+#erstes-iconhobbys {
+  background: url("../img/cosmetics.svg")50% 50% no-repeat;
+}
+#zweites-iconhobbys {
+  background: url("../img/burger.svg")50% 50% no-repeat;
+}
+#drittes-iconhobbys {
+  background: url("../img/camera.svg")50% 50% no-repeat;
+}
+#erstes-iconhobbys, #zweites-iconhobbys, #drittes-iconhobbys {
+      height: 300px;
+      width: 31.3333%;
+      text-align: center;
+      margin: 0 1%;
+}
+/*Sektion CV*/
+#cv, #Projekte, #ausbildungen{
+  float: left;
+}
+.cv-eintrag {
+  width: 100%;
+  float: left;
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.links p {
+  display: inline-block;
+  padding: 15px;
+
+}
+.links {
+  float:left;
+}
+.rechts {
+  width: 70%;
+  vertical-align: top;
+  float: right;
+}
+.cv-titel {
+  font-size: 1.2em;
+  line-height: 3em;
+  font-weight: bold;
+}
+.cv-beschreibung {
+  padding: 0 15px 15px 15px;
+}
+
+/* Sektion Portfolio */
+#portfolio {
+  float: left;
+}
+.portfolio-kacheln{
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+}
+.portfolio-eintrag img{
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-titel {
+  background: rgba(157, 157, 163, 0.80);
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.portfolio-eintrag:hover .arbeit-titel {
+  visibility: visible;
+}
+/*detailseite */
+img.img-links {
+  width: 48%;
+  float:left;
+  margin: 0 4% 4% 0%;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0 4% 0;
+}
+.back {
+  width: 100%;
+  text-align:center;
+  height: 4em;
+}
+/* Kontaktformular */
+#formular {
+  clear:both; /* floating aufheben*/
+}
+.kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #F5F5F5;
+  border: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+.absenden:hover {
+  background: #466D4E;
+}
+/* footer*/
+footer {
+  background: #F5F5F5;
+  color: #684220;
+  padding: 2% 0;
+  margin:2% 0 0 0;
+  text-align: center;
+}
+/* Mediaqueries bis 960px*/
+@media only screen and (max-width: 960px) {
+  #about {
+    display:flex;
+    flex-flow: row wrap;
+    padding-top: 67px;
+  }
+#beschreibung {
+  width: 100%;
+}
+nav a {
+    font-size: 14px;
+    padding: 23px 12px;
+}
+#portrait {
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+#erstes-icon, #zweites-icon, #drittes-icon {
+  width: 100%;
+}
+#erstes-iconhobbys, #zweites-iconhobbys, #drittes-iconhobbys {
+      height: 180px;
+}
+section#cv {
+  padding: 0 5%;
+}
+.links {
+  width: 100%;
+  text-align: center;
+}
+.rechts {
+  width: 100%;
+}
+}
+/* Mediaqueries unter 480Pixel - zb. Handy im Hochformat */
+@media only screen and (max-width: 480px) {
+  #about {
+    padding-top: 0px;
+  }
+  nav li {
+    display: block;
+    line-height: 0.1em;
+  }
+  #erstes-iconhobbys, #zweites-iconhobbys, #drittes-iconhobbys {
+        height: 111px;
+  }
+  ul {
+    padding: 0;
+  }
+  nav {
+    position: relative;
+    width:100%;
+  }
+  main {
+    padding:0;
+  }
+  .portfolio-eintrag {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+}
